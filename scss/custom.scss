@@ -1,0 +1,56 @@
+$body-bg: #e0e8ff;
+$font-family-sans-serif: "Red Hat Display", sans-serif;
+$box-shadow: 0 1rem 3rem rgba(blue, 0.275);
+$border-radius: 1rem;
+$primary: hsl(245, 75%, 52%);
+body {
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+button {
+  height: 50px;
+}
+.alto-100 {
+  margin-top: 60px;
+}
+
+.content-plan,
+.change {
+  margin-top: 15px;
+}
+@media (min-width: 720px) {
+  .tarjeta {
+    width: 30rem;
+    border-radius: 3%;
+  }
+
+  .annual-plan {
+    background: #f8f9fe;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 3%;
+    height: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url("/images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  img {
+    border-top-left-radius: 3%;
+  }
+
+  .annual-plan {
+    background: #f8f9fe;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 3%;
+    height: 75px;
+  }
+}
+@import "../node_modules/bootstrap/scss/bootstrap";
